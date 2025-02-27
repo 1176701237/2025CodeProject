@@ -10,11 +10,11 @@
         </jdbcConnection>
 
         <javaModelGenerator targetPackage="com.code.mybatis.model.model"
-                            targetProject="/src/main/java" />
+                            targetProject="mybatisDemoCODE/src/main/java" />
         <sqlMapGenerator targetPackage="mabatisMappers"
-                         targetProject="/src/main/resources" />
+                         targetProject="mybatisDemoCODE/src/main/resources" />
         <javaClientGenerator targetPackage="com.code.mybatis.model.mapper"
-                             targetProject="/src/main/java" type="XMLMAPPER" />
+                             targetProject="mybatisDemoCODE/src/main/java" type="XMLMAPPER" />
 
 
         <!-- 需要逆向的表（根据实际表名修改） -->
