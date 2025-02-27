@@ -17,7 +17,7 @@ public class MyBatisGeneratorRunner {
         // 加载generatorConfig.xml
         InputStream config = MyBatisGeneratorRunner.class
                 .getClassLoader()
-                .getResourceAsStream("generatorConfig.xml");
+                .getResourceAsStream("generator/generatorConfig.xml");
 
         ConfigurationParser cp = new ConfigurationParser(warnings);
         Configuration configObj = cp.parseConfiguration(config);
