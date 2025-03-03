@@ -9,12 +9,12 @@
                         password="likang1206L!">
         </jdbcConnection>
 
-        <javaModelGenerator targetPackage="com.code.mybatis.model.model"
-                            targetProject="mybatisDemoCODE/src/main/java" />
+        <javaModelGenerator targetPackage="com.demo.model.model"
+                            targetProject="cordemo/src/main/java" />
         <sqlMapGenerator targetPackage="mabatisMappers"
-                         targetProject="mybatisDemoCODE/src/main/resources" />
-        <javaClientGenerator targetPackage="com.code.mybatis.model.mapper"
-                             targetProject="mybatisDemoCODE/src/main/java" type="XMLMAPPER" />
+                         targetProject="cordemo/src/main/resources" />
+        <javaClientGenerator targetPackage="com.demo.model.mapper"
+                             targetProject="cordemo/src/main/java" type="XMLMAPPER" />
 
 
         <!-- 需要逆向的表（根据实际表名修改） -->
