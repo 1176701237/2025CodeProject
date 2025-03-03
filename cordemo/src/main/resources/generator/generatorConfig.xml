@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+<generatorConfiguration>
+    <context id="DB2Tables" targetRuntime="MyBatis3">
+        <jdbcConnection driverClass="com.mysql.jdbc.Driver"
+                        connectionURL="jdbc:mysql://47.94.94.217:3306/workTest?characterEncoding=utf8" userId="root"
+                        password="likang1206L!">
+        </jdbcConnection>
+
+        <javaModelGenerator targetPackage="com.code.mybatis.model.model"
+                            targetProject="mybatisDemoCODE/src/main/java" />
+        <sqlMapGenerator targetPackage="mabatisMappers"
+                         targetProject="mybatisDemoCODE/src/main/resources" />
+        <javaClientGenerator targetPackage="com.code.mybatis.model.mapper"
+                             targetProject="mybatisDemoCODE/src/main/java" type="XMLMAPPER" />
+
+
+        <!-- 需要逆向的表（根据实际表名修改） -->
+        <table tableName="admin">
+            <!--
+                    <generatedKey column="list_id" sqlStatement="JDBC" />
+            -->
+        </table>
+    </context>
+</generatorConfiguration>
